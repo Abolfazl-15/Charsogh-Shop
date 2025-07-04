@@ -33,7 +33,7 @@ const Articles = () => {
     >
       <h2 className="text-center text-orange text-bold">مقالات</h2>
       <Link to="https://learning.roshaprint.com/colorology/pantone-2022-autumn/">
-        <div className="flex flex-col items-center relative xl:top-24 xl:left-[800px] left-12 xl:w-[400px] w-[310px] top-10 gap-3">
+        <div className="flex flex-col items-center relative xl:top-24 xl:left-[800px] left-7 xl:w-[400px] w-[310px] top-10 gap-3">
           <img
             src={PicArticles}
             className="xl:w-80 xl:h-64 w-64 h-64 rounded-md"
@@ -48,7 +48,7 @@ const Articles = () => {
         </div>
       </Link>
       <Link to="https://www.topickshop.com/how-to-wash-socks-correctly/">
-        <div className="relative xl:-top-[150px] left-12 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
+        <div className="relative xl:-top-[150px] left-7 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
           <div className="flex flex-col xl:flex-row-reverse text-center items-center gap-3">
             <img
               src={PicArticles2}
@@ -65,7 +65,7 @@ const Articles = () => {
         </div>
       </Link>
       <Link to="https://rcooshop.com/blog/2023-sunglasses/">
-        <div className="relative xl:-top-[400px] left-12 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
+        <div className="relative xl:-top-[400px] left-7 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
           <div className="flex flex-col xl:flex-row-reverse text-center items-center gap-3">
             <img
               src={PicArticles3}
@@ -82,7 +82,7 @@ const Articles = () => {
         </div>
       </Link>
       <Link to="https://pooshaknovin.com/22-%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8-%D8%B1%D9%86%DA%AF-%D8%AC%D8%B0%D8%A7%D8%A8-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B3%D8%AA-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A8%D8%A7-%D8%B1%D9%86%DA%AF-%D8%A2%D8%A8%DB%8C/">
-        <div className="relative xl:-top-[230px] left-14 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
+        <div className="relative xl:-top-[230px] left-7 xl:left-1 xl:w-[600px] w-[310px] top-[100px]">
           <div className="flex flex-col xl:flex-row-reverse text-center items-center gap-3">
             <img
               src={PicArticles4}
@@ -99,7 +99,7 @@ const Articles = () => {
         </div>
       </Link>
       <button
-        className=" flex flex-row relative top-24 left-44 xl:-top-52 xl:left-52 "
+        className=" flex flex-row relative top-24 left-36 xl:-top-52 xl:left-52 "
         onClick={toggleButton}
       >
         {isOpen ? <ArrowDown /> : <ArrowUp />}
