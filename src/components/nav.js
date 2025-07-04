@@ -25,7 +25,7 @@ const Nav = () => {
       className="navigation"
     >
       <button className="hidden hover:shadow-lg hover:shadow-orange md:block rounded-md bg-orange cursor-pointer w-[152px] h-[52px] shadow-xl shadow-orange relative top-24 left-28 text-white  md:top-[45px] md:left-[1080px]">
-        <Link to="/login">ورورد</Link>
+        <Link to="/login">ورود</Link>
       </button>
       <ul className="hidden md:flex flex-row gap-3 justify-center md:mt-1 md:relative left-14 md:gap-6 mr-5 xl:gap-14 md:justify-end xl:mr-64 ">
         <Link to="/Articles">

@@ -44,7 +44,7 @@ export default function MobileSidebar() {
           </Link>
         </ul>
         <button className="rounded-md text-center bg-orange cursor-pointer w-[152px] h-[52px] relative top-0 left-0 text-white  md:top-[45px] md:left-[1120px]">
-          <Link to="/login">ورورد</Link>
+          <Link to="/login">ورود</Link>
         </button>
       </div>
       {/* بک‌گراند تیره زمانی که سایدبار باز است */}

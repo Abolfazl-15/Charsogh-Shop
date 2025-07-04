@@ -29,11 +29,11 @@ function Header() {
     >
       <img
         src={tittle1}
-        className="w-72 relative left-16 top-8 xl:w-[426px] xl:h-[150px] xl:top-56 xl:left-56"
+        className="w-72 relative left-10 top-8 xl:w-[426px] xl:h-[150px] xl:top-56 xl:left-56"
       />
       <img
         src={tittle2}
-        className="relative top-20 w-72 left-16 xl:w-[492px] xl:h-[756px] xl:left-[-200px]"
+        className="relative top-20 w-72 left-12 xl:w-[492px] xl:h-[756px] xl:left-[-200px]"
       />
       <img
         src={tittle}
@@ -41,14 +41,14 @@ function Header() {
       />
       <img
         src={tittle3}
-        className="relative top-24 w-52 left-24 xl:w-[372px] xl:h-[756px] xl:left-[670px] xl:top-[-1135px]"
+        className="relative top-24 w-52 left-[90px] xl:w-[372px] xl:h-[756px] xl:left-[670px] xl:top-[-1135px]"
       />
       <img
         src={tittle4}
-        className="w-72 relative left-16 top-32 xl:w-[426px] xl:h-[150px] xl:top-[-1280px] xl:left-56"
+        className="w-72 relative left-10 top-32 xl:w-[426px] xl:h-[150px] xl:top-[-1280px] xl:left-56"
       />
       <Link to="/shop">
-        <div className="flex flex-row justify-center gap-8 relative top-52 left-12 xl:top-[-1100px] xl:left-[-10px] xl:text-xl">
+        <div className="flex flex-row justify-center gap-8 relative top-52 left-8 xl:top-[-1100px] xl:left-[-10px] xl:text-xl">
           <span className="pb-1 border-b-2 border-transparent hover:border-black cursor-pointer transition-all duration-200">
             بچه گانه
           </span>
@@ -62,7 +62,7 @@ function Header() {
       </Link>
       <Link to="/shop">
         <img
-          className="relative top-64 left-10 xl:top-[-1000px] xl:left-1"
+          className="relative top-64 left-[30px] xl:top-[-1000px] xl:left-1"
           src={section1}
         />
       </Link>
