@@ -3,7 +3,6 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const ShopContext = createContext();
 
 export const ShopProvider = ({ children }) => {
-  // بارگذاری سبد خرید از localStorage
   const [cartItems, setCartItems] = useState(() => {
     if (typeof window !== "undefined") {
       const savedCart = localStorage.getItem("shop_cart");
@@ -16,12 +15,10 @@ export const ShopProvider = ({ children }) => {
     return [];
   });
 
-  // ذخیره سبد خرید در localStorage هنگام تغییر
   useEffect(() => {
     localStorage.setItem("shop_cart", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  // افزودن محصول به سبد خرید
   const addToCart = (product) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) => item.id === product.id);
@@ -36,7 +33,6 @@ export const ShopProvider = ({ children }) => {
     });
   };
 
-  // کاهش تعداد محصول در سبد خرید
   const removeFromCart = (productId) => {
     setCartItems((prevItems) => {
       const existingItem = prevItems.find((item) => item.id === productId);
@@ -49,17 +45,14 @@ export const ShopProvider = ({ children }) => {
     });
   };
 
-  // حذف کامل محصول از سبد خرید
   const deleteFromCart = (productId) => {
     setCartItems((prevItems) =>
       prevItems.filter((item) => item.id !== productId)
     );
   };
 
-  // محاسبه تعداد کل آیتم‌ها
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
-  // محاسبه جمع کل قیمت‌ها
   const totalPrice = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0

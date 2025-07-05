@@ -12,7 +12,6 @@ import Tshirt from "../Images/Tshert.jfif";
 import Kot from "../Images/kot.jpg";
 import pants from "../Images/Pnts.jfif";
 
-// انیمیشن‌ها
 const sliderVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -41,7 +40,6 @@ const productVariants = {
   },
 };
 
-// داده‌های محصولات
 const products = [
   {
     id: 5,
@@ -97,22 +95,18 @@ const NewProductSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { addToCart } = useShop();
 
-  // تنظیمات اسلایدر
   const itemsPerPage = 4;
   const totalSlides = Math.ceil(products.length / itemsPerPage);
 
-  // محاسبه محصولات قابل نمایش در اسلاید فعلی
   const visibleProducts = products.slice(
     currentSlide * itemsPerPage,
     (currentSlide + 1) * itemsPerPage
   );
 
-  // رفتن به اسلاید بعدی
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
   };
 
-  // رفتن به اسلاید قبلی
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
   };
@@ -125,7 +119,6 @@ const NewProductSlider = () => {
       className="mb-12"
     >
       <div className="relative">
-        {/* نمایش محصولات */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {visibleProducts.map((product, index) => (
             <motion.div
@@ -170,7 +163,6 @@ const NewProductSlider = () => {
           ))}
         </div>
 
-        {/* دکمه‌های ناوبری - دسکتاپ */}
         {products.length > itemsPerPage && (
           <>
             <motion.button
@@ -194,7 +186,6 @@ const NewProductSlider = () => {
           </>
         )}
 
-        {/* دکمه‌های ناوبری - موبایل */}
         {products.length > itemsPerPage && (
           <div className="sm:hidden flex justify-center mt-6 space-x-4">
             <motion.button

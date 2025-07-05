@@ -3,7 +3,6 @@ import { useShop } from "./Context/shopContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiTrash2, FiPlus, FiMinus } from "react-icons/fi";
 
-// انیمیشن‌ها
 const cartVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
